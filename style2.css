@@ -1,0 +1,380 @@
+/* ========================================
+   GLOBAL STYLES & ANIMATIONS
+   ======================================== */
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide in from left */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Slide in from right */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+}
+
+/* ========================================
+   BUTTON STYLES & HOVER EFFECTS
+   ======================================== */
+
+/* General button styling */
+button {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Button hover effect - lift up */
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Button active state */
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Primary buttons */
+button[style*="background-color: #3498db"],
+button[style*="background-color: #2c5f8d"],
+button[style*="background-color: white"] {
+    transition: all 0.3s ease;
+}
+
+button[style*="background-color: #3498db"]:hover {
+    background-color: #2980b9 !important;
+    box-shadow: 0 8px 20px rgba(52, 152, 219, 0.3);
+}
+
+/* ========================================
+   LINK STYLES & HOVER EFFECTS
+   ======================================== */
+
+a {
+    transition: all 0.3s ease;
+}
+
+/* Navbar links hover */
+nav a:hover {
+    opacity: 0.8;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Footer links hover */
+footer a:hover {
+    color: #3498db !important;
+    transform: translateX(5px);
+}
+
+/* ========================================
+   CARD & BOX EFFECTS
+   ======================================== */
+
+/* Product cards */
+div[style*="background: #f0f0f0"] {
+    transition: all 0.4s ease;
+    border-radius: 10px;
+}
+
+div[style*="background: #f0f0f0"]:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Category images hover */
+img[style*="border-radius: 10px"] {
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+img[style*="border-radius: 10px"]:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.1);
+}
+
+/* ========================================
+   HEADING ANIMATIONS
+   ======================================== */
+
+h1, h2, h3 {
+    transition: all 0.3s ease;
+}
+
+h1:hover {
+    color: #3498db;
+    text-shadow: 0 2px 10px rgba(52, 152, 219, 0.2);
+}
+
+h2:hover {
+    transform: translateX(5px);
+}
+
+/* ========================================
+   INPUT FIELD STYLES
+   ======================================== */
+
+input[type="email"],
+input[type="text"] {
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.2);
+    transform: scale(1.02);
+}
+
+input[type="email"]::placeholder,
+input[type="text"]::placeholder {
+    color: #999;
+}
+
+/* ========================================
+   IMAGE EFFECTS
+   ======================================== */
+
+img {
+    transition: all 0.4s ease;
+}
+
+/* Image hover zoom */
+img:hover {
+    transform: scale(1.02);
+}
+
+/* ========================================
+   SECTION ANIMATIONS
+   ======================================== */
+
+/* Fade sections in on load */
+section, div[style*="padding: "] {
+    animation: fadeIn 0.8s ease-out;
+}
+
+/* ========================================
+   TEXT & TYPOGRAPHY EFFECTS
+   ======================================== */
+
+p {
+    transition: color 0.3s ease;
+    line-height: 1.6;
+}
+
+/* Feature text animation */
+p:hover {
+    color: #2c5f8d;
+}
+
+/* ========================================
+   NAVBAR EFFECTS
+   ======================================== */
+
+nav {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+nav a {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+/* Underline animation on hover */
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* ========================================
+   FEATURE ICONS EFFECTS
+   ======================================== */
+
+i {
+    transition: all 0.3s ease;
+}
+
+i:hover {
+    transform: scale(1.2) rotate(10deg);
+}
+
+/* ========================================
+   GRADIENT OVERLAYS
+   ======================================== */
+
+/* Overlay effect on hover */
+div[style*="background: linear-gradient"]:hover {
+    filter: brightness(1.05);
+}
+
+/* ========================================
+   OPACITY & TRANSPARENCY EFFECTS
+   ======================================== */
+
+div[style*="opacity: 0.7"]:hover {
+    opacity: 1 !important;
+    transform: scale(1.05);
+}
+
+/* ========================================
+   BOX SHADOW STYLES
+   ======================================== */
+
+/* Shadow on elements */
+div[style*="padding: 60px"],
+div[style*="padding: 80px"] {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+div[style*="padding: 60px"]:hover,
+div[style*="padding: 80px"]:hover {
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Tablets */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 48px !important;
+    }
+    
+    h2 {
+        font-size: 36px !important;
+    }
+    
+    button {
+        padding: 15px 30px !important;
+        font-size: 16px !important;
+    }
+    
+    div[style*="flex: 1"] {
+        flex: 1 !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 32px !important;
+    }
+    
+    h2 {
+        font-size: 24px !important;
+    }
+    
+    p {
+        font-size: 14px !important;
+    }
+    
+    button {
+        padding: 12px 20px !important;
+        font-size: 14px !important;
+    }
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+
+/* Hover lift effect */
+.hover-lift {
+    transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Smooth transition */
+.smooth {
+    transition: all 0.3s ease;
+}
+
+/* Scale on hover */
+.scale-hover:hover {
+    transform: scale(1.05);
+}
+
+/* Color transition */
+.color-transition {
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Rotation effect */
+.rotate-hover:hover {
+    transform: rotate(5deg);
+}
+
+/* Glow effect */
+.glow:hover {
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.5);
+}

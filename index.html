@@ -1,78 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Clinika - Medical Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body style="margin: 0; padding: 0;">
-    <nav style="position: sticky; top: 0; background-color: white; padding: 2% 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); z-index: 100;">
-        <h1 style="font-size: 1.8rem; color: #0052cc; font-weight: bold; margin: 0;">Start Bootstrap</h1>
-        <div style="display: flex; gap: 3%; list-style: none; margin: 0;">
-            <a href="#home" style="text-decoration: none; color: #333; font-weight: 500; font-size: 1rem;">Home</a>
-            <a href="#resume" style="text-decoration: none; color: #333; font-weight: 500; font-size: 1rem;">Resume</a>
-            <a href="#projects" style="text-decoration: none; color: #333; font-weight: 500; font-size: 1rem;">Projects</a>
-            <a href="#contact" style="text-decoration: none; color: #333; font-weight: 500; font-size: 1rem;">Contact</a>
+
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif;">
+    <!-- NAVBAR -->
+    <nav
+        style="position: sticky; top: 0; background-color: #3498db; padding: 20px; display: flex; justify-content: space-between; align-items: center; z-index: 100;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <i class="fas fa-heart" style="color: white; font-size: 24px;"></i>
+            <h1 style="color: white; margin: 0;">Clinika</h1>
+        </div>
+
+        <div style="display: flex; gap: 20px; align-items: center;">
+            <a href="#home" style="text-decoration: none; color: white;">Home</a>
+            <a href="#news" style="text-decoration: none; color: white;">News</a>
+            <a href="#about" style="text-decoration: none; color: white;">About The Clinic</a>
+            <a href="#features" style="text-decoration: none; color: white;">Features</a>
+            <a href="#pages" style="text-decoration: none; color: white;">Pages</a>
+            <a href="#contact" style="text-decoration: none; color: white;">Contact Us</a>
+            <button
+                style="background-color: white; color: #3498db; padding: 10px 20px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer;">Appointment</button>
         </div>
     </nav>
 
-    <div style="background-color: white; padding: 6% 8%; display: flex; align-items: center; justify-content: space-between; min-height: 100vh; gap: 5%;">
-        <div style="flex: 1; color: #333;">
-            <div style="background-color: rgba(0, 82, 204, 0.1); color: #0052cc; padding: 0.6rem 1.2rem; border-radius: 20px; display: inline-block; margin-bottom: 2rem; font-size: 0.8rem; font-weight: bold; letter-spacing: 0.5px;">DESIGN · DEVELOPMENT · MARKETING</div>
-            
-            <h2 style="font-size: 1.1rem; margin: 0 0 1rem 0; font-weight: normal; color: #666;">I can help your business to</h2>
-            <h1 style="font-size: 3.8rem; margin: 0 0 2rem 0; font-weight: bold; line-height: 1.1; background: linear-gradient(135deg, #0052cc 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Get online and grow fast</h1>
-            
-            <div style="display: flex; gap: 1.5rem; margin-top: 2rem;">
-                <button style="background-color: #0052cc; color: white; padding: 0.9rem 2.2rem; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; font-size: 1rem; transition: all 0.3s;">Resume</button>
-                <button style="background-color: white; color: #0052cc; padding: 0.9rem 2.2rem; border: 2px solid #0052cc; border-radius: 5px; font-weight: bold; cursor: pointer; font-size: 1rem; transition: all 0.3s;">Projects</button>
-            </div>
+    <!-- HERO SECTION -->
+    <div
+        style="background: linear-gradient(135deg, #3498db 0%, #5dade2 100%); padding: 60px; display: flex; align-items: center; gap: 60px; height: 100vh;">
+        <!-- LEFT SIDE CONTENT -->
+        <div style="flex: 1; color: white;">
+            <h1 style="font-size: 80px; margin: 0 0 40px 0;">The FFP3 Mask is Now in Stock Again</h1>
+
+            <p style="font-size: 24px; margin: 0 0 40px 0; color: white;">Since the first days of operation of Medify,
+                our teaming has been focused on building a high-qualities medicals service by clinika. A client thats
+                unhappy for a reason is a problem, a client that's unhappy...</p>
+
+            <button
+                style="background-color: #2c5f8d; color: white; padding: 25px 50px; border: none; cursor: pointer; font-size: 20px;">Shop
+                for Masks</button>
         </div>
 
-        <div style="flex: 1; display: flex; justify-content: center; align-items: center;">
-            <div style="position: relative; width: 380px; height: 480px; background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%); border-radius: 30px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.3);">
-   
-                <div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; position: relative;">
-                    <img src="https://startbootstrap.github.io/startbootstrap-personal/assets/profile.png" alt="Profile" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
-                </div>
+        <!-- RIGHT SIDE IMAGE -->
+        <div style="flex: 1;">
+            <img src="https://clinika.modeltheme.com/wp-content/uploads/2020/11/banner-mask.png" alt="FFP3 Mask"
+                style="width: 100%; max-width: 600px;">
+        </div>
+    </div>
 
+    <!-- WAVE DIVIDER -->
+    <div style="background: white; height: 50px;"></div>
+
+    <!-- QUALITY SECTION -->
+    <div
+        style="background: linear-gradient(135deg, #52c41a 0%, #73d13d 100%); padding: 80px 60px; display: flex; align-items: center; gap: 60px; min-height: 80vh;">
+        <!-- LEFT SIDE CONTENT -->
+        <div style="flex: 1; color: white;">
+            <h2 style="font-size: 64px; margin: 0 0 30px 0;">Premium Quality with Clinika</h2>
+
+            <p style="font-size: 20px; margin: 0 0 40px 0; color: white;">Aenean volutpat, sem sit amet ullamcorper
+                gravida, molestie risus enim nullaing velit faucibus kodata dolor rhoncus curabit</p>
+
+            <button
+                style="background-color: white; color: #52c41a; padding: 20px 40px; border: none; cursor: pointer; font-size: 18px; border-radius: 25px; font-weight: bold;">Clients
+                Feedback</button>
+        </div>
+
+        <!-- RIGHT SIDE IMAGE -->
+        <div style="flex: 1;">
+            <img src="https://clinika.modeltheme.com/wp-content/uploads/2020/11/banner-mask.png" alt="Quality"
+                style="width: 100%; max-width: 500px;">
+        </div>
+    </div>
+
+    <!-- PRODUCTS SECTION -->
+    <div style="padding: 60px; background: white;">
+        <h2 style="font-size: 48px; text-align: center; margin: 0 0 60px 0;">Latest Products</h2>
+
+        <div style="display: flex; gap: 40px; justify-content: center;">
+            <!-- PRODUCT 1 -->
+            <div style="background: #f0f0f0; padding: 30px; width: 300px; text-align: center;">
+                <img src="https://clinika.modeltheme.com/wp-content/uploads/2021/04/product-pills-1-768x864.jpg"
+                    alt="Clean Eyes 20" style="width: 200px; height: 200px; object-fit: contain;">
+                <h3 style="margin: 20px 0 10px 0;">Clean Eyes 20</h3>
+                <p style="font-size: 18px; color: #2c5f8d; font-weight: bold;">£40.00</p>
+            </div>
+
+            <!-- PRODUCT 2 -->
+            <div style="background: #f0f0f0; padding: 30px; width: 300px; text-align: center;">
+                <img src="https://clinika.modeltheme.com/wp-content/uploads/2021/04/product-pills-2-768x864.jpg"
+                    alt="Clean Eyes 10" style="width: 200px; height: 200px; object-fit: contain;">
+                <h3 style="margin: 20px 0 10px 0;">Clean Eyes 10</h3>
+                <p style="font-size: 18px; color: #2c5f8d; font-weight: bold;">£30.00</p>
+            </div>
+
+            <!-- PRODUCT 3 -->
+            <div style="background: #f0f0f0; padding: 30px; width: 300px; text-align: center;">
+                <img src="https://clinika.modeltheme.com/wp-content/uploads/2021/04/product-pills-3-768x864.jpg"
+                    alt="Clean Eyes Group" style="width: 200px; height: 200px; object-fit: contain;">
+                <h3 style="margin: 20px 0 10px 0;">Clean Eyes Group</h3>
+                <p style="font-size: 18px; color: #2c5f8d; font-weight: bold;">£30.00 - £40.00</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- NEWSLETTER SECTION -->
+    <div
+        style="background: rgba(0,0,0,0.5); padding: 100px 60px; text-align: center; min-height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <h2 style="font-size: 64px; color: white; margin: 0 0 30px 0; font-weight: bold;">Subscribe Now to Our
+            Newsletter!</h2>
+
+        <p style="font-size: 20px; color: white; margin: 0 0 50px 0; max-width: 700px;">A team of expert doctors that
+            are leading our clinic! Meet our staff and visit us for your next problem!</p>
+
+        <div style="display: flex; gap: 10px; justify-content: center;">
+            <input type="email" placeholder="Enter Your Email Address..."
+                style="padding: 20px 30px; width: 400px; border: none; border-radius: 25px; font-size: 16px;">
+            <button
+                style="background-color: #3498db; color: white; padding: 20px 40px; border: none; border-radius: 25px; font-weight: bold; cursor: pointer; font-size: 18px;">Subscribe</button>
+        </div>
+    </div>
+
+    <!-- PRODUCT CATEGORIES SECTION -->
+    <div style="padding: 80px 60px; background: white; text-align: center;">
+        <h2 style="font-size: 48px; margin: 0 0 20px 0;">Product Categories</h2>
+
+        <p
+            style="font-size: 16px; color: #666; margin: 0 0 60px 0; max-width: 600px; margin-left: auto; margin-right: auto;">
+            Aenean volutpat, sem sit amet ullamcorper gravida, molestie risus enim valit faucibus kodale dolor rhoncus
+            curabit.</p>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
+            <!-- CATEGORY 1 -->
+            <div style="width: 280px;">
+                <img src="https://clinika.modeltheme.com/wp-content/uploads/2021/04/category-1.jpg" alt="Masks"
+                    style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+            </div>
+
+            <!-- CATEGORY 2 -->
+            <div style="width: 280px;">
+                <img src="https://clinika.modeltheme.com/wp-content/uploads/2021/04/category-2.jpg" alt="Medical Staff"
+                    style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+            </div>
+
+            <!-- CATEGORY 3 -->
+            <div style="width: 280px;">
+                <img src="https://clinika.modeltheme.com/wp-content/uploads/2021/04/category-3.jpg" alt="Gloves"
+                    style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+            </div>
+
+            <!-- CATEGORY 4 -->
+            <div style="width: 280px;">
+                <img src="https://clinika.modeltheme.com/wp-content/uploads/2021/04/category-4.jpg" alt="Hospital"
+                    style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+            </div>
+
+            <!-- CATEGORY 5 -->
+            <div style="width: 280px;">
+                <img src="https://clinika.modeltheme.com/wp-content/uploads/2021/04/category-5.jpg" alt="Lab"
+                    style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- BENEFITS SECTION -->
+    <div style="padding: 80px 60px; background: white; display: flex; align-items: center; gap: 80px;">
+        <!-- LEFT SIDE FEATURES -->
+        <div style="flex: 1;">
+            <h2 style="font-size: 48px; margin: 0 0 60px 0; color: #333;">Specialized medical checkup tailored to the patient</h2>
+            
+            <!-- FEATURE 1 -->
+            <div style="display: flex; gap: 30px; margin-bottom: 40px;">
+                <div style="font-size: 40px; color: #3498db;">
+                    <i class="fas fa-stethoscope"></i>
+                </div>
                 <div>
+                    <h3 style="margin: 0 0 10px 0; font-size: 20px;">All medical facility</h3>
+                    <p style="color: #666; margin: 0;">Entreaties unpleasant sufficient few pianoforte discovered.</p>
                 </div>
-                
+            </div>
+
+            <!-- FEATURE 2 -->
+            <div style="display: flex; gap: 30px; margin-bottom: 40px;">
+                <div style="font-size: 40px; color: #f39c12;">
+                    <i class="fas fa-award"></i>
+                </div>
+                <div>
+                    <h3 style="margin: 0 0 10px 0; font-size: 20px;">Lowest fees in city</h3>
+                    <p style="color: #666; margin: 0;">May find some redeeming value with wait for it, dummy copy.</p>
+                </div>
+            </div>
+
+            <!-- FEATURE 3 -->
+            <div style="display: flex; gap: 30px; margin-bottom: 40px;">
+                <div style="font-size: 40px; color: #e74c3c;">
+                    <i class="fas fa-dna"></i>
+                </div>
+                <div>
+                    <h3 style="margin: 0 0 10px 0; font-size: 20px;">Experienced Doctor</h3>
+                    <p style="color: #666; margin: 0;">A client that's unhappy for ants reason is problem is worse.</p>
+                </div>
+            </div>
+
+            <!-- FEATURE 4 -->
+            <div style="display: flex; gap: 30px;">
+                <div style="font-size: 40px; color: #27ae60;">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div>
+                    <h3 style="margin: 0 0 10px 0; font-size: 20px;">5000+ Happy Patient</h3>
+                    <p style="color: #666; margin: 0;">Even if your less into design and more in content strategy.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE IMAGE -->
+        <div style="flex: 1; text-align: center;">
+            <img src="https://clinika.modeltheme.com/wp-content/uploads/2020/11/home-shape-1.png" alt="Medical Team" style="width: 100%; max-width: 400px;">
+        </div>
+    </div>
+
+    <!-- BRAND PARTNERS SECTION -->
+    <div style="padding: 80px 60px; background: #f9f9f9; text-align: center;">
+        <h2 style="font-size: 48px; margin: 0 0 20px 0;">Our Brand Partners</h2>
+
+        <p
+            style="font-size: 16px; color: #666; margin: 0 0 60px 0; max-width: 600px; margin-left: auto; margin-right: auto;">
+            A team of expert doctors that are leading our clinic! Meet our staff and visit us for your next problem!</p>
+
+        <div style="display: flex; gap: 40px; justify-content: center; flex-wrap: wrap; align-items: center;">
+            <!-- PARTNER 1 -->
+            <div style="opacity: 0.7;">
+                <img src="https://clinika.modeltheme.com/wp-content/uploads/2020/05/partener_1.png" alt="Partner 1"
+                    style="height: 60px;">
+            </div>
+
+            <!-- PARTNER 2 -->
+            <div style="opacity: 0.7;">
+                <img src="https://clinika.modeltheme.com/wp-content/uploads/2020/05/partener_2-300x168.png"
+                    alt="Partner 2" style="height: 60px;">
+            </div>
+
+            <!-- PARTNER 3 -->
+            <div style="opacity: 0.7;">
+                <img src="https://clinika.modeltheme.com/wp-content/uploads/2020/05/partener_3-300x155.png"
+                    alt="Partner 3" style="height: 60px;">
+            </div>
+
+            <!-- PARTNER 4 -->
+            <div style="opacity: 0.7;">
+                <img src="https://clinika.modeltheme.com/wp-content/uploads/2020/05/partener_4.png" alt="Partner 4"
+                    style="height: 60px;">
+            </div>
+
+            <!-- PARTNER 5 -->
+            <div style="opacity: 0.7;">
+                <img src="https://clinika.modeltheme.com/wp-content/uploads/2020/05/partener_5-300x109.png"
+                    alt="Partner 5" style="height: 60px;">
+            </div>
+
+            <!-- PARTNER 6 -->
+            <div style="opacity: 0.7;">
+                <img src="https://clinika.modeltheme.com/wp-content/uploads/2020/05/partener_6.png" alt="Partner 6"
+                    style="height: 60px;">
             </div>
         </div>
     </div>
 
-    <!-- ABOUT ME SECTION -->
-    <div style="background-color: #f5f5f5; padding: 8% 10%; text-align: center; min-height: 60vh; display: flex; flex-direction: column; justify-content: center;">
-        <h2 style="font-size: 3.5rem; margin: 0 0 1.5rem 0; font-weight: bold;">
-            <span style="color: #0052cc;">About</span>
-            <span style="color: #764ba2;"> Me</span>
-        </h2>
-        
-        <h3 style="font-size: 1.2rem; margin: 0 0 2rem 0; font-weight: normal; color: #666;">My name is Start Bootstrap and I help brands grow.</h3>
-        
-        <p style="font-size: 1rem; color: #666; max-width: 800px; margin: 0 auto 3rem; line-height: 1.8;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dolorum itaque qui unde quisquam consequatur autem. Eveniet quasi nobis aliquid cumque officiis sed rem iure ipsa! Praesentium ratione atque dolorem?</p>
-        
-        <!-- Social Media Icons -->
-        <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 2rem;">
-            <a href="#twitter" style="font-size: 2.5rem; color: #764ba2; text-decoration: none;"><i class="fab fa-twitter"></i></a>
-            <a href="#linkedin" style="font-size: 2.5rem; color: #764ba2; text-decoration: none;"><i class="fab fa-linkedin"></i></a>
-            <a href="#github" style="font-size: 2.5rem; color: #764ba2; text-decoration: none;"><i class="fab fa-github"></i></a>
+    <!-- FOOTER WAVE DIVIDER -->
+    <svg style="width: 100%; height: 100px; display: block;" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,30 Q300,80 600,30 T1200,30 L1200,0 L0,0 Z" fill="#3d3d3d"></path>
+    </svg>
+
+    <!-- FOOTER SECTION -->
+    <div style="background-color: #3d3d3d; padding: 80px 60px; color: white;">
+        <div style="display: flex; gap: 100px; margin-bottom: 60px;">
+            <!-- QUICK LINKS 1 -->
+            <div style="flex: 1;">
+                <h3 style="font-size: 20px; margin: 0 0 30px 0; font-weight: bold;">Quick Links</h3>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 15px;"><a href="#" style="color: white; text-decoration: none;">About our Clinic</a></li>
+                    <li style="margin-bottom: 15px;"><a href="#" style="color: white; text-decoration: none;">Our members</a></li>
+                    <li style="margin-bottom: 15px;"><a href="#" style="color: white; text-decoration: none;">Our Services</a></li>
+                    <li style="margin-bottom: 15px;"><a href="#" style="color: white; text-decoration: none;">Latest News</a></li>
+                    <li style="margin-bottom: 15px;"><a href="#" style="color: white; text-decoration: none;">Get in touch</a></li>
+                </ul>
+            </div>
+
+            <!-- GET CLINIKA -->
+            <div style="flex: 1;">
+                <h3 style="font-size: 20px; margin: 0 0 30px 0; font-weight: bold;">Get Clinika</h3>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 15px;"><a href="#" style="color: white; text-decoration: none;">About our Clinic</a></li>
+                    <li style="margin-bottom: 15px;"><a href="#" style="color: white; text-decoration: none;">Our members</a></li>
+                    <li style="margin-bottom: 15px;"><a href="#" style="color: white; text-decoration: none;">Our Services</a></li>
+                    <li style="margin-bottom: 15px;"><a href="#" style="color: white; text-decoration: none;">Latest News</a></li>
+                    <li style="margin-bottom: 15px;"><a href="#" style="color: white; text-decoration: none;">Get in touch</a></li>
+                </ul>
+            </div>
+
+            <!-- QUICK LINKS 2 -->
+            <div style="flex: 1;">
+                <h3 style="font-size: 20px; margin: 0 0 30px 0; font-weight: bold;">Quick Links</h3>
+                <ul style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 15px;"><a href="#" style="color: white; text-decoration: none;">Our Team</a></li>
+                    <li style="margin-bottom: 15px;"><a href="#" style="color: white; text-decoration: none;">Our Patients</a></li>
+                    <li style="margin-bottom: 15px;"><a href="#" style="color: white; text-decoration: none;">Other Products</a></li>
+                    <li style="margin-bottom: 15px;"><a href="#" style="color: white; text-decoration: none;">My account</a></li>
+                    <li style="margin-bottom: 15px;"><a href="#" style="color: white; text-decoration: none;">Appointment</a></li>
+                </ul>
+            </div>
+
+            <!-- SUBSCRIBE -->
+            <div style="flex: 1;">
+                <h3 style="font-size: 20px; margin: 0 0 30px 0; font-weight: bold;">Subscribe Now!</h3>
+                <p style="margin-bottom: 20px; color: #ccc;">Get the latest news from the clinique!</p>
+                <div style="display: flex; margin-bottom: 40px;">
+                    <input type="email" placeholder="Enter Your Email Address..." style="flex: 1; padding: 15px 20px; border: none; border-radius: 5px 0 0 5px;">
+                    <button style="background-color: #3498db; color: white; padding: 15px 25px; border: none; border-radius: 0 5px 5px 0; cursor: pointer; font-size: 18px;">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div>
+                    <p style="margin: 0 0 10px 0;">Follow Us:</p>
+                    <div style="display: flex; gap: 15px;">
+                        <a href="#" style="color: white; font-size: 20px;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="color: white; font-size: 20px;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color: white; font-size: 20px;"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" style="color: white; font-size: 20px;"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER BOTTOM -->
+        <div style="border-top: 1px solid #555; padding-top: 30px; text-align: center; color: #aaa;">
+            <p style="margin: 0;">© Clinika Theme by ModelTheme.com. All rights Reserved.</p>
         </div>
     </div>
 
-    <!-- FOOTER -->
-    <footer style="background-color: white; padding: 3% 8%; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #e0e0e0;">
-        <p style="margin: 0; color: #666; font-size: 0.95rem;">Copyright © Your Website 2023</p>
-        <div style="display: flex; gap: 2rem; list-style: none; margin: 0;">
-            <a href="#privacy" style="text-decoration: none; color: #0052cc; font-weight: 500;">Privacy</a>
-            <a href="#terms" style="text-decoration: none; color: #0052cc; font-weight: 500;">Terms</a>
-            <a href="#contact" style="text-decoration: none; color: #0052cc; font-weight: 500;">Contact</a>
-        </div>
-    </footer>
-
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </body>
+
+</html>

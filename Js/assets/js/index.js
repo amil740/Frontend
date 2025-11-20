@@ -42,3 +42,10 @@ for (var x = 0; x < arr.length; x++) {
         }
     }
 console.log(sumeven);
+var sumodd = 0;
+for (var y = 0; y < arr.length; y++) {
+        if (arr[y] % 2 !== 0) {
+            sumodd += arr[y];
+        }
+    }
+console.log(sumodd);

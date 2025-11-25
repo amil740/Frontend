@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <style>
+        .sidebar {
+            background-color: teal;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 300px;
+            padding: 20px;
+            overflow-y: auto;
+            display: none;
+        }
+        
+        .sidebar.show {
+            display: block;
+        }
+        
+        .sidebar-close {
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        
+        .sidebar-item {
+            color: lightblue;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar" id="sidebar">
+        <span class="sidebar-close" id="closeSidebar">&times;</span>
+        <div class="sidebar-item">lorem</div>
+        <div class="sidebar-item">lorem</div>
+        <div class="sidebar-item">lorem</div>
+        <div class="sidebar-item">lorem</div>
+        <div class="sidebar-item">lorem</div>
+    </div>
+    <button class="btn" id="openSidebar">☰ open sidebar</button>
+
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <input type="text" class="form-control" id="usernameInput" placeholder="Username" aria-label="Username">
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-primary w-100" id="submitBtn" type="button">Primary</button>
+            </div>
+            <div class="col-12">
+                <p id="output"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/intro.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+body {
+    background: white;
+}
+
+.calculator-container {
+    padding: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+}
+
+.button-group {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.operation-button {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid black;
+    color: white;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+    color: black;
+}
+
+.result-field {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+}

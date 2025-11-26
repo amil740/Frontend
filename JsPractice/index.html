@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12 Boxes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        .boxes-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 800px;
+        }
+        .box {
+            background-color: #0ede2a;
+            color: rgb(0, 0, 0);
+            padding: 40px;
+            border-radius: 8px;
+            font-size: 24px;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: grab;
+        }
+        
+        .BigBox{
+            background-color: rgb(5, 77, 77);
+            width: 400px;
+            height: 200px;
+            padding: 40px;
+            border: 2px solid #333;
+            margin: 20px;
+            min-height: 200px;
+        }
+        .BigBox2{
+            background-color: rgba(255, 234, 6, 0.505);
+            width: 400px;
+            height: 200px;
+            padding: 40px;
+            border: 2px solid #333;
+            margin: 20px;
+            min-height: 200px;
+        }
+        .BigBox3{
+            background-color: rgb(12, 56, 252);
+            width: 400px;
+            height: 200px;
+            padding: 40px;
+            border: 2px solid #333;
+            margin: 20px;
+            min-height: 200px;
+        }
+      
+
+    </style>
+</head>
+<body>
+<div class="boxes-container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+    <div class="box">8</div>
+    <div class="box">9</div>
+    <div class="box">10</div>
+    <div class="box">11</div>
+    <div class="box">12</div>
+</div>
+
+
+<div class="BigBoxes">
+    <div class="BigBox" data-zone="1"></div>
+    <div class="BigBox2" data-zone="2"></div>
+    <div class="BigBox3" data-zone="3"></div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
